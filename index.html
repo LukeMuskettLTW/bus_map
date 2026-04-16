@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>London Bus Speed Change Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <style>
+    html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; }
+    #map { height: 100%; width: 100%; }
+    .panel { position: absolute; top: 14px; right: 14px; z-index: 1000; width: 360px; max-width: calc(100vw - 28px); background: rgba(255,255,255,0.96); border-radius: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.18); padding: 16px; line-height: 1.35; max-height: calc(100vh - 28px); overflow: auto; }
+    .panel h2 { margin: 0 0 8px 0; font-size: 19px; }
+    .panel p { margin: 0 0 10px 0; font-size: 13px; color: #444; }
+    .panel label { display: block; font-size: 13px; font-weight: bold; margin: 10px 0 4px 0; }
+    .panel select, .panel input[type="text"] { width: 100%; box-sizing: border-box; padding: 8px 10px; border: 1px solid #cfcfcf; border-radius: 8px; font-size: 14px; background: #fff; }
+    .row { display: flex; gap: 8px; align-items: center; }
+    .row > * { flex: 1; }
+    .panel button { padding: 8px 10px; border: 1px solid #cfcfcf; border-radius: 8px; background: #f7f7f7; cursor: pointer; font-size: 14px; }
+    .panel button:hover { background: #eeeeee; }
+    .checkline { display: flex; align-items: center; gap: 8px; margin: 8px 0; font-size: 13px; }
+    .checkline input { margin: 0; }
+    .hint { margin-top: 8px; font-size: 12px; color: #666; }
+    .status { margin-top: 12px; font-size: 12px; line-height: 1.35; color: #555; max-height: 160px; overflow: auto; }
+    .legend { position: absolute; right: 14px; bottom: 14px; z-index: 1000; background: rgba(255,255,255,0.96); border-radius: 14px; box-shadow: 0 4px 18px rgba(0,0,0,0.18); padding: 12px 14px; font-size: 13px; line-height: 1.45; width: 330px; max-height: 45vh; overflow: auto; }
+    .legend h4 { margin: 0 0 8px 0; font-size: 14px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    .swatch { width: 18px; height: 12px; border: 1px solid rgba(0,0,0,0.18); box-sizing: border-box; flex: 0 0 auto; }
+    .note-box { position: absolute; top: 14px; left: 56px; z-index: 1000; background: rgba(255,255,255,0.96); border-radius: 14px; box-shadow: 0 4px 18px rgba(0,0,0,0.18); padding: 10px 12px; font-size: 13px; max-width: 720px; }
+    .hover-box { position: absolute; left: 56px; bottom: 14px; z-index: 1000; background: rgba(255,255,255,0.96); border-radius: 14px; box-shadow: 0 4px 18px rgba(0,0,0,0.18); padding: 12px 14px; font-size: 13px; line-height: 1.45; width: 340px; min-height: 96px; }
+    .hover-box h4 { margin: 0 0 6px 0; font-size: 14px; }
+    .mini { font-size: 11px; color: #777; }
+    .dft-cluster { background: transparent; border-radius: 50%; color: #111; font-weight: bold; text-align: center; }
+    .dft-cluster div { border-radius: 50%; margin: 0 auto; border: 2px solid #111; box-shadow: 0 0 0 2px rgba(255,255,255,0.82) inset; font-weight: bold; }
+    @media (max-width: 768px) {
+      .panel { width: calc(100vw - 20px); max-width: calc(100vw - 20px); top: 10px; right: 10px; max-height: 52vh; }
+      .legend { right: 10px; bottom: 10px; width: calc(100vw - 20px); max-width: 340px; }
+      .note-box, .hover-box { left: 10px; width: calc(100vw - 20px); max-width: 340px; }
+      .note-box { top: auto; bottom: 170px; }
+      .hover-box { bottom: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="note-box">
+    The default view colours London LSOAs using your precomputed bus speed data. Redder areas have worsened more; greener areas have improved more. You can switch on Street Manager roadworks and 20mph limits as separate overlays to compare with route performance. The 20mph layer is shown cumulatively by rollout year and only uses roads marked as live / implemented in your dated build.
+  </div>
+  <div class="panel">
+    <h2>How have bus speeds changed?</h2>
+    <p>Choose a start year and an end year, then switch between percentage change and latest speed. Turn on routes and overlays to investigate further.</p>
+    <div class="row">
+      <div><label for="fromYear">From year</label><select id="fromYear"></select></div>
+      <div><label for="toYear">To year</label><select id="toYear"></select></div>
+    </div>
+    <label for="metricMode">Map metric</label>
+    <select id="metricMode">
+      <option value="pct_change" selected>Percentage change</option>
+      <option value="latest_speed">Latest speed</option>
+    </select>
+    <label for="searchBox">Search route</label>
+    <div class="row">
+      <input type="text" id="searchBox" placeholder="e.g. 25, 73, SL8" />
+      <button id="searchBtn" type="button" style="flex:0 0 auto;">Find</button>
+      <button id="clearBtn" type="button" style="flex:0 0 auto;">Clear</button>
+    </div>
+    <label>Layers</label>
+    <div class="checkline"><input type="checkbox" id="showRoutes" /><label for="showRoutes" style="margin:0;font-weight:bold;">Show route lines</label></div>
+    <div class="checkline"><input type="checkbox" id="showCycleSchemes" checked /><label for="showCycleSchemes" style="margin:0;font-weight:bold;">Cycle infrastructure</label></div>
+    <div class="checkline"><input type="checkbox" id="showBusLanes" checked /><label for="showBusLanes" style="margin:0;font-weight:bold;">Bus priority measures</label></div>
+    <div class="checkline"><input type="checkbox" id="show20mph" /><label for="show20mph" style="margin:0;font-weight:bold;">20mph limits</label></div>
+    <div class="checkline"><input type="checkbox" id="showDftRoadworks" /><label for="showDftRoadworks" style="margin:0;font-weight:bold;">Street Manager roadworks</label></div>
+    <div class="checkline"><input type="checkbox" id="showRouteLabels" /><label for="showRouteLabels" style="margin:0;font-weight:bold;">Show route labels on map</label></div>
+    <div class="hint">Keep bus speed shading as the base, then switch on routes, 20mph limits and roadworks to see whether slower corridors line up with network pressure.</div>
+    <div class="status" id="statusBox"></div>
+  </div>
+  <div class="hover-box" id="hoverBox">
+    <h4>Hover over an area</h4>
+    <div class="mini">This will show the area name, speed and change. Street Manager roadworks, 20mph limits, cycle schemes and bus priority measures can be clicked directly for more detail.</div>
+  </div>
+  <div class="legend" id="legendBox"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script>
+    const map = L.map("map", { zoomControl: true }).setView([51.5074, -0.1278], 10);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
+
+    let lsoaLayer = null, routeLayer = null, cycleSchemeLayer = null, busLaneLayer = null, dftRoadworksLayer = null, routeLabelLayer = null, speed20Layer = null;
+    let originalLsoaGeoJson = null, originalRoutesGeoJson = null, originalCycleSchemesGeoJson = null, originalBusLanesGeoJson = null, originalDftRoadworksGeoJson = null, original20mphGeoJson = null;
+    let lsoaLookup = new Map(), routeTimeseries = new Map(), availableYears = [], detectedRouteField = null, searchedRoute = null;
+
+    const statusBox = document.getElementById("statusBox");
+    const hoverBox = document.getElementById("hoverBox");
+    const legendBox = document.getElementById("legendBox");
+
+    function setStatus(text) { const div = document.createElement("div"); div.textContent = text; statusBox.appendChild(div); }
+    function clearStatus() { statusBox.innerHTML = ""; }
+    function cleanKey(s) { return String(s || "").replace(/^\uFEFF/, "").trim().toLowerCase().replace(/[\s\-\/]+/g, "_"); }
+    function normaliseRoute(value) { return String(value || "").trim().toUpperCase(); }
+    function safeNumber(v) { if (v === null || v === undefined || v === "") return null; const n = Number(String(v).replace(/,/g, "").trim()); return Number.isFinite(n) ? n : null; }
+
+    function splitCsvLine(line) {
+      const out = []; let current = ""; let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') { current += '"'; i++; } else { inQuotes = !inQuotes; }
+        } else if (ch === "," && !inQuotes) { out.push(current); current = ""; } else { current += ch; }
+      }
+      out.push(current);
+      return out.map(v => v.trim());
+    }
+
+    function csvToObjects(text) {
+      const lines = text.trim().split(/\r?\n/);
+      if (!lines.length) return [];
+      const rawHeaders = splitCsvLine(lines[0]).map(h => h.replace(/^\uFEFF/, ""));
+      const headers = rawHeaders.map(cleanKey);
+      const rows = [];
+      for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const values = splitCsvLine(lines[i]);
+        const obj = {};
+        headers.forEach((h, idx) => obj[h] = values[idx] ?? "");
+        rows.push(obj);
+      }
+      return rows;
+    }
+
+    function currentFromYear() { return Number(document.getElementById("fromYear").value); }
+    function currentToYear() { return Number(document.getElementById("toYear").value); }
+    function currentMetricMode() { return document.getElementById("metricMode").value; }
+    function ensureValidYearRange() { const fromSel = document.getElementById("fromYear"); const toSel = document.getElementById("toYear"); if (Number(fromSel.value) > Number(toSel.value)) toSel.value = fromSel.value; }
+
+    function populateYearDropdowns() {
+      const fromSel = document.getElementById("fromYear");
+      const toSel = document.getElementById("toYear");
+      fromSel.innerHTML = ""; toSel.innerHTML = "";
+      availableYears.forEach(year => {
+        const opt1 = document.createElement("option"); opt1.value = year; opt1.textContent = year; fromSel.appendChild(opt1);
+        const opt2 = document.createElement("option"); opt2.value = year; opt2.textContent = year; toSel.appendChild(opt2);
+      });
+      if (availableYears.length) { fromSel.value = availableYears[0]; toSel.value = availableYears[availableYears.length - 1]; }
+    }
+
+    function getLsoaCode(props) { return props.lsoa21cd || props.LSOA21CD || props.lsoa_code || props.code || ""; }
+    function getLsoaName(props) { return props.lsoa21nm || props.LSOA21NM || props.lsoa_name || props.name || "LSOA"; }
+
+    function getFeatureRoute(feature) {
+      if (!feature || !feature.properties) return null;
+      if (detectedRouteField && feature.properties[detectedRouteField] != null) return normaliseRoute(feature.properties[detectedRouteField]);
+      const candidates = ["route", "Route", "ROUTE", "route_id", "RouteID", "name", "Name", "line", "Line"];
+      for (const key of candidates) { if (feature.properties[key] != null) return normaliseRoute(feature.properties[key]); }
+      return null;
+    }
+
+    function detectRouteField(geojson) {
+      if (!geojson || !geojson.features || !geojson.features.length) return null;
+      const sample = geojson.features.slice(0, 10);
+      const candidates = ["route", "Route", "ROUTE", "route_id", "RouteID", "name", "Name", "line", "Line"];
+      for (const key of candidates) { if (sample.some(f => f.properties && f.properties[key] != null)) return key; }
+      return null;
+    }
+
+    function buildLsoaLookup(rows) {
+      lsoaLookup = new Map();
+      const years = new Set();
+      rows.forEach(row => {
+        const code = String(row.lsoa_code || "").trim();
+        const year = safeNumber(row.year);
+        const avgSpeed = safeNumber(row.avg_speed);
+        const routeCount = safeNumber(row.route_count);
+        const routes = String(row.routes || "").trim();
+        if (!code || year === null || avgSpeed === null) return;
+        if (!lsoaLookup.has(code)) lsoaLookup.set(code, new Map());
+        lsoaLookup.get(code).set(year, { lsoa_code: code, lsoa_name: row.lsoa_name || "", year, avg_speed: avgSpeed, route_count: routeCount, routes: routes ? routes.split("|").filter(Boolean) : [] });
+        years.add(year);
+      });
+      availableYears = [...years].sort((a, b) => a - b);
+    }
+
+    function buildRouteTimeseries(rows) {
+      routeTimeseries = new Map();
+      rows.forEach(row => {
+        const route = normaliseRoute(row.route);
+        const year = safeNumber(row.year);
+        const avgSpeed = safeNumber(row.avg_speed);
+        if (!route || year === null || avgSpeed === null) return;
+        if (!routeTimeseries.has(route)) routeTimeseries.set(route, new Map());
+        routeTimeseries.get(route).set(year, avgSpeed);
+      });
+    }
+
+    function getAreaYearRow(lsoaCode, year) { const yearMap = lsoaLookup.get(String(lsoaCode || "").trim()); if (!yearMap) return null; return yearMap.get(year) || null; }
+
+    function areaMetric(feature) {
+      const code = getLsoaCode(feature.properties || {});
+      const fromRow = getAreaYearRow(code, currentFromYear());
+      const toRow = getAreaYearRow(code, currentToYear());
+      const fromSpeed = fromRow ? fromRow.avg_speed : null;
+      const toSpeed = toRow ? toRow.avg_speed : null;
+      let pctChange = null;
+      if (fromSpeed !== null && toSpeed !== null && fromSpeed !== 0) pctChange = ((toSpeed - fromSpeed) / fromSpeed) * 100;
+      return { code, fromRow, toRow, fromSpeed, toSpeed, pctChange };
+    }
+
+    function routeMetric(route) {
+      const yearMap = routeTimeseries.get(route);
+      if (!yearMap) return { fromSpeed: null, toSpeed: null, pctChange: null };
+      const fromSpeed = yearMap.get(currentFromYear()) ?? null;
+      const toSpeed = yearMap.get(currentToYear()) ?? null;
+      let pctChange = null;
+      if (fromSpeed !== null && toSpeed !== null && fromSpeed !== 0) pctChange = ((toSpeed - fromSpeed) / fromSpeed) * 100;
+      return { fromSpeed, toSpeed, pctChange };
+    }
+
+    function pctColour(value) {
+      if (value === null || Number.isNaN(value)) return "#d9d9d9";
+      if (value < -25) return "#67000d";
+      if (value < -20) return "#a50f15";
+      if (value < -15) return "#cb181d";
+      if (value < -10) return "#ef3b2c";
+      if (value < -5) return "#fb6a4a";
+      if (value < 0) return "#fdd0a2";
+      if (value < 5) return "#f7f7f7";
+      if (value < 10) return "#c7e9c0";
+      if (value < 20) return "#74c476";
+      if (value < 30) return "#31a354";
+      return "#006d2c";
+    }
+
+    function speedColour(value) {
+      if (value === null || Number.isNaN(value)) return "#d9d9d9";
+      if (value < 7) return "#67000d";
+      if (value < 8) return "#cb181d";
+      if (value < 9) return "#ef3b2c";
+      if (value < 10) return "#fdae6b";
+      if (value < 11) return "#f7f7f7";
+      if (value < 12) return "#c7e9c0";
+      if (value < 13) return "#74c476";
+      if (value < 14) return "#31a354";
+      return "#006d2c";
+    }
+
+    function areaFillColour(metric) { return currentMetricMode() === "latest_speed" ? speedColour(metric.toSpeed) : pctColour(metric.pctChange); }
+    function routeLineColour(metric) { return currentMetricMode() === "latest_speed" ? speedColour(metric.toSpeed) : pctColour(metric.pctChange); }
+
+    function getDftClusterTier(count) {
+      if (count >= 250) return { colour: "#8c2d04", size: 64 };
+      if (count >= 100) return { colour: "#d94801", size: 58 };
+      if (count >= 25) return { colour: "#f16913", size: 50 };
+      if (count >= 5) return { colour: "#fdae6b", size: 44 };
+      return { colour: "#ffd166", size: 40 };
+    }
+
+    function updateLegend() {
+      const dftOn = document.getElementById("showDftRoadworks").checked;
+      const speed20On = document.getElementById("show20mph").checked;
+      let html = "";
+      if (currentMetricMode() === "latest_speed") {
+        html += '<h4>Latest speed (' + currentToYear() + ')</h4>'
+          + '<div class="legend-item"><span class="swatch" style="background:#67000d;"></span> Under 7 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#cb181d;"></span> 7 to 8 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#ef3b2c;"></span> 8 to 9 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#fdae6b;"></span> 9 to 10 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#f7f7f7;"></span> 10 to 11 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#c7e9c0;"></span> 11 to 12 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#74c476;"></span> 12 to 13 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#31a354;"></span> 13 to 14 mph</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#006d2c;"></span> Over 14 mph</div>';
+      } else {
+        html += '<h4>Percentage change (' + currentFromYear() + ' → ' + currentToYear() + ')</h4>'
+          + '<div class="legend-item"><span class="swatch" style="background:#67000d;"></span> Worse than -25%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#cb181d;"></span> -25% to -15%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#ef3b2c;"></span> -15% to -10%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#fb6a4a;"></span> -10% to -5%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#fdd0a2;"></span> -5% to 0%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#f7f7f7;"></span> 0% to +5%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#c7e9c0;"></span> +5% to +10%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#74c476;"></span> +10% to +20%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#31a354;"></span> +20% to +30%</div>'
+          + '<div class="legend-item"><span class="swatch" style="background:#006d2c;"></span> Better than +30%</div>';
+      }
+
+      html += '<div class="legend-item"><span class="swatch" style="background:#000000;"></span> Cycle infrastructure</div>'
+        + '<div class="legend-item"><span class="swatch" style="background:#7b1fa2;"></span> Bus lanes / priority</div>';
+
+      if (speed20On) html += '<div style="margin-top:8px;"><b>20mph limits</b></div><div class="legend-item"><span class="swatch" style="background:#00bcd4;"></span> Live / implemented 20mph roads up to selected year</div>';
+      if (dftOn) html += '<div style="margin-top:8px;"><b>Street Manager roadworks</b></div>'
+        + '<div class="legend-item"><span class="swatch" style="background:#ffd166;"></span> Very low concentration</div>'
+        + '<div class="legend-item"><span class="swatch" style="background:#fdae6b;"></span> Low concentration</div>'
+        + '<div class="legend-item"><span class="swatch" style="background:#f16913;"></span> Medium concentration</div>'
+        + '<div class="legend-item"><span class="swatch" style="background:#d94801;"></span> High concentration</div>'
+        + '<div class="legend-item"><span class="swatch" style="background:#8c2d04;"></span> Very high concentration</div>';
+      legendBox.innerHTML = html;
+    }
+
+    function updateHoverBox(feature) {
+      if (!feature) {
+        hoverBox.innerHTML = '<h4>Hover over an area</h4><div class="mini">This will show the area name, speed and change. Street Manager roadworks, 20mph limits, cycle schemes and bus priority measures can be clicked directly for more detail.</div>';
+        return;
+      }
+      const props = feature.properties || {};
+      const metric = areaMetric(feature);
+      const areaName = getLsoaName(props);
+      hoverBox.innerHTML =
+        '<h4>' + areaName + '</h4>'
+        + '<div><b>' + currentFromYear() + ' speed:</b> ' + (metric.fromSpeed === null ? 'No data' : metric.fromSpeed.toFixed(1) + ' mph') + '</div>'
+        + '<div><b>' + currentToYear() + ' speed:</b> ' + (metric.toSpeed === null ? 'No data' : metric.toSpeed.toFixed(1) + ' mph') + '</div>'
+        + '<div><b>Change:</b> ' + (metric.pctChange === null ? 'No data' : (metric.pctChange >= 0 ? '+' : '') + metric.pctChange.toFixed(1) + '%') + '</div>'
+        + '<div><b>Routes in ' + currentToYear() + ':</b> ' + (metric.toRow && metric.toRow.route_count != null ? metric.toRow.route_count : 'No data') + '</div>';
+    }
+
+    function rebuildLsoaLayer() {
+      if (lsoaLayer) map.removeLayer(lsoaLayer);
+      if (!originalLsoaGeoJson) return;
+      lsoaLayer = L.geoJSON(originalLsoaGeoJson, {
+        style: function(feature) {
+          const metric = areaMetric(feature);
+          return { color: "#8c8c8c", weight: 0.35, opacity: 0.35, fillColor: areaFillColour(metric), fillOpacity: 0.60 };
+        },
+        onEachFeature: function(feature, layer) {
+          layer.on({
+            mouseover: function() { layer.setStyle({ weight: 1.2, opacity: 0.8, color: "#333" }); updateHoverBox(feature); },
+            mouseout: function() { lsoaLayer.resetStyle(layer); updateHoverBox(null); },
+            click: function(e) {
+              const props = feature.properties || {};
+              const metric = areaMetric(feature);
+              const areaName = getLsoaName(props);
+              const routeList = metric.toRow && metric.toRow.routes ? metric.toRow.routes : [];
+              const popupHtml =
+                '<b>' + areaName + '</b><br>LSOA code: ' + (metric.code || 'Unknown')
+                + '<br><br><b>' + currentFromYear() + ' speed:</b> ' + (metric.fromSpeed === null ? 'No data' : metric.fromSpeed.toFixed(1) + ' mph')
+                + '<br><b>' + currentToYear() + ' speed:</b> ' + (metric.toSpeed === null ? 'No data' : metric.toSpeed.toFixed(1) + ' mph')
+                + '<br><b>Change:</b> ' + (metric.pctChange === null ? 'No data' : (metric.pctChange >= 0 ? '+' : '') + metric.pctChange.toFixed(1) + '%')
+                + '<br><br><b>Routes in ' + currentToYear() + ':</b> ' + (metric.toRow && metric.toRow.route_count != null ? metric.toRow.route_count : 'No data')
+                + '<br><b>Route list:</b> ' + (routeList.length ? routeList.join(", ") : 'No data');
+              layer.bindPopup(popupHtml).openPopup(e.latlng);
+            }
+          });
+        }
+      }).addTo(map);
+    }
+
+    function rebuildRouteLayer() {
+      if (routeLayer) map.removeLayer(routeLayer);
+      if (!document.getElementById("showRoutes").checked || !originalRoutesGeoJson) return;
+      routeLayer = L.geoJSON(originalRoutesGeoJson, {
+        style: function(feature) {
+          const route = getFeatureRoute(feature);
+          const metric = routeMetric(route);
+          if (metric.fromSpeed === null && metric.toSpeed === null) return { color: "#bdbdbd", weight: 2, opacity: 0.2 };
+          const highlighted = searchedRoute && route === searchedRoute;
+          return { color: routeLineColour(metric), weight: highlighted ? 5.5 : 2.6, opacity: searchedRoute ? (highlighted ? 1 : 0.12) : 0.8 };
+        },
+        onEachFeature: function(feature, layer) {
+          const route = getFeatureRoute(feature);
+          const metric = routeMetric(route);
+          layer.bindPopup('<b>Route ' + route + '</b><br><b>' + currentFromYear() + ' speed:</b> ' + (metric.fromSpeed === null ? 'No data' : metric.fromSpeed.toFixed(1) + ' mph') + '<br><b>' + currentToYear() + ' speed:</b> ' + (metric.toSpeed === null ? 'No data' : metric.toSpeed.toFixed(1) + ' mph') + '<br><b>Change:</b> ' + (metric.pctChange === null ? 'No data' : (metric.pctChange >= 0 ? '+' : '') + metric.pctChange.toFixed(1) + '%'));
+        }
+      }).addTo(map);
+      routeLayer.bringToFront();
+    }
+
+    function rebuildRouteLabels() {
+      if (routeLabelLayer) map.removeLayer(routeLabelLayer);
+      if (!document.getElementById("showRouteLabels").checked || !routeLayer) return;
+      routeLabelLayer = L.layerGroup();
+      routeLayer.eachLayer(layer => {
+        const route = getFeatureRoute(layer.feature);
+        if (!route) return;
+        try {
+          const center = layer.getBounds().getCenter();
+          const marker = L.marker(center, { interactive: false, icon: L.divIcon({ className: "", html: '<div style="font-size:11px;font-weight:bold;background:rgba(255,255,255,0.82);padding:1px 4px;border-radius:4px;border:1px solid rgba(0,0,0,0.15);">' + route + '</div>', iconSize: [36, 16], iconAnchor: [18, 8] }) });
+          marker.addTo(routeLabelLayer);
+        } catch (e) {}
+      });
+      routeLabelLayer.addTo(map);
+    }
+
+    function rebuildCycleSchemeLayer() {
+      if (cycleSchemeLayer) map.removeLayer(cycleSchemeLayer);
+      if (!document.getElementById("showCycleSchemes").checked || !originalCycleSchemesGeoJson) return;
+      const selectedYear = currentToYear();
+      cycleSchemeLayer = L.geoJSON(originalCycleSchemesGeoJson, {
+        filter: function(feature) {
+          const p = feature.properties || {};
+          const opened = safeNumber(p.opened_year ?? p.OpenedYear ?? p.year_opened ?? p.open_year ?? p.year);
+          if (opened === null) return false;
+          return opened <= selectedYear;
+        },
+        style: function() { return { color: "#000000", weight: 4, opacity: 0.95, lineCap: "round", lineJoin: "round" }; },
+        onEachFeature: function(feature, layer) {
+          const p = feature.properties || {};
+          layer.bindPopup('<b>' + (p.historical_label || p.route_code || p.Label || "Cycle scheme") + '</b><br>Current label: ' + (p.current_label || p.route_code || p.Label || "Unknown") + '<br>Opened: ' + (p.opened_year || "Unknown") + '<br>' + (p.name ? 'Name: ' + p.name + '<br>' : '') + (p.label_note ? p.label_note + '<br>' : ''));
+          layer.on("mouseover", function() { layer.setStyle({ weight: 6, opacity: 1 }); });
+          layer.on("mouseout", function() { layer.setStyle({ weight: 4, opacity: 0.95 }); });
+        }
+      }).addTo(map);
+      cycleSchemeLayer.bringToFront();
+    }
+
+    function getBusLaneLabel(props) {
+      const vehicles = String(props.VEHICLES || "").trim();
+      const lower = vehicles.toLowerCase();
+      if (!vehicles) return "Bus lane";
+      if (lower === "bus") return "Bus lane (bus only)";
+      if (lower.includes("cycle") || lower.includes("taxi") || lower.includes("motorcycle")) return "Bus lane (shared use)";
+      return "Bus lane";
+    }
+
+    function rebuildBusLaneLayer() {
+      if (busLaneLayer) map.removeLayer(busLaneLayer);
+      if (!document.getElementById("showBusLanes").checked || !originalBusLanesGeoJson) return;
+      busLaneLayer = L.geoJSON(originalBusLanesGeoJson, {
+        style: function(feature) {
+          const p = feature.properties || {};
+          const vehicles = String(p.VEHICLES || "").toLowerCase();
+          let colour = "#7b1fa2";
+          if (vehicles.includes("cycle") || vehicles.includes("taxi") || vehicles.includes("motorcycle")) colour = "#8e24aa";
+          return { color: colour, weight: 3.4, opacity: 0.9, lineCap: "round", lineJoin: "round" };
+        },
+        onEachFeature: function(feature, layer) {
+          const p = feature.properties || {};
+          const label = getBusLaneLabel(p);
+          const road = p.ROAD_NAME || p.road_name || p.street_name || p.name || "";
+          const vehicles = p.VEHICLES || "";
+          const direction = p.DIRECTION || p.direction || p.flow || "";
+          const laneType = p.LANE_TYPE || p.lane_type || "";
+          const borough = p.BOROUGH_NAME || p.borough_name || "";
+          layer.bindPopup('<b>' + label + '</b><br>' + (road ? 'Road: ' + road + '<br>' : '') + (borough ? 'Borough: ' + borough + '<br>' : '') + (vehicles ? 'Permitted vehicles: ' + vehicles + '<br>' : '') + (direction ? 'Direction: ' + direction + '<br>' : '') + (laneType && laneType !== "Not Applicable" ? 'Lane type: ' + laneType + '<br>' : ''));
+          layer.on("mouseover", function() { layer.setStyle({ weight: 5, opacity: 1 }); });
+          layer.on("mouseout", function() { busLaneLayer.resetStyle(layer); });
+        }
+      }).addTo(map);
+      busLaneLayer.bringToFront();
+    }
+
+    function rebuild20mphLayer() {
+      if (speed20Layer) map.removeLayer(speed20Layer);
+      if (!document.getElementById("show20mph").checked || !original20mphGeoJson) return;
+      const selectedYear = currentToYear();
+      const filteredFeatures = (original20mphGeoJson.features || []).filter(feature => {
+        const p = feature.properties || {};
+        const year = safeNumber(p.introduced_year);
+        const status = String(p.introduced_status || "").toLowerCase();
+        if (year === null) return false;
+        if (status && !["implemented", "implemented_phased", "manual_override"].includes(status)) return false;
+        return year <= selectedYear;
+      });
+      speed20Layer = L.geoJSON({ type: "FeatureCollection", features: filteredFeatures }, {
+        style: function() { return { color: "#00bcd4", weight: 1.0, opacity: 0.38 }; },
+        onEachFeature: function(feature, layer) {
+          const p = feature.properties || {};
+          const roadName = p.name || p.ref || p.highway || "20mph road";
+          const borough = p.borough_name || "Unknown borough";
+          const year = p.introduced_year || "Unknown";
+          const source = p.introduced_source || "unknown";
+          const status = p.introduced_status || "unknown";
+          layer.bindPopup('<b>20mph limit</b><br>Road: ' + roadName + '<br>Borough: ' + borough + '<br>Introduced: ' + year + '<br>Status: ' + status + '<br>Source: ' + source);
+        }
+      }).addTo(map);
+      speed20Layer.bringToFront();
+    }
+
+    function parseYearFromIso(value) { if (!value) return null; const d = new Date(value); if (Number.isNaN(d.getTime())) return null; return d.getFullYear(); }
+    function overlapsYearRange(startValue, endValue) {
+      const fromYear = currentFromYear();
+      const toYear = currentToYear();
+      const startYear = parseYearFromIso(startValue);
+      const endYear = parseYearFromIso(endValue);
+      if (startYear === null && endYear === null) return true;
+      if (startYear !== null && endYear !== null) return !(endYear < fromYear || startYear > toYear);
+      if (startYear !== null) return startYear >= fromYear && startYear <= toYear;
+      return endYear >= fromYear && endYear <= toYear;
+    }
+    function safeDateOnly(value) { if (!value) return "Unknown"; return String(value).split("T")[0]; }
+    function dateDiffDays(startValue, endValue) { if (!startValue || !endValue) return null; const s = new Date(startValue), e = new Date(endValue); if (Number.isNaN(s.getTime()) || Number.isNaN(e.getTime())) return null; return Math.round((e - s) / (1000 * 60 * 60 * 24)); }
+
+    function formatDftPopup(props) {
+      const days = dateDiffDays(props.start, props.end);
+      const lines = [];
+      lines.push('<b>' + (props.street_name || "Street Manager activity") + '</b>');
+      if (props.activity_reference_number) lines.push('Reference: ' + props.activity_reference_number);
+      if (props.highway_authority) lines.push('Highway authority: ' + props.highway_authority);
+      if (props.area_name) lines.push('Area: ' + props.area_name);
+      if (props.town) lines.push('Town: ' + props.town);
+      if (props.activity_type) lines.push('Activity type: ' + props.activity_type);
+      if (props.activity_type_details) lines.push('Activity details: ' + props.activity_type_details);
+      if (props.activity_location_type) lines.push('Location type: ' + props.activity_location_type);
+      if (props.activity_location_description) lines.push('Description: ' + props.activity_location_description);
+      if (props.traffic_management_required) lines.push('Traffic management required: ' + props.traffic_management_required);
+      if (props.traffic_management_type) lines.push('Traffic management type: ' + props.traffic_management_type);
+      if (props.collaborative_working) lines.push('Collaborative working: ' + props.collaborative_working);
+      if (props.cancelled) lines.push('Cancelled: ' + props.cancelled);
+      if (props.start) lines.push('Start: ' + safeDateOnly(props.start));
+      if (props.end) lines.push('End: ' + safeDateOnly(props.end));
+      if (days !== null) lines.push('Approx duration: ' + days + ' days');
+      if (props.event_type) lines.push('Latest event type: ' + props.event_type);
+      if (props.lsoa21nm) lines.push('LSOA: ' + props.lsoa21nm);
+      if (props.road_manager) lines.push('Road manager: ' + props.road_manager);
+      return lines.join("<br>");
+    }
+
+    function rebuildDftRoadworksLayer() {
+      if (dftRoadworksLayer) map.removeLayer(dftRoadworksLayer);
+      if (!document.getElementById("showDftRoadworks").checked || !originalDftRoadworksGeoJson) return;
+      const filtered = originalDftRoadworksGeoJson.features.filter(f => overlapsYearRange(f.properties?.start || f.properties?.start_date_only, f.properties?.end || f.properties?.end_date_only));
+      dftRoadworksLayer = L.markerClusterGroup({
+        spiderfyOnMaxZoom: true, showCoverageOnHover: false, zoomToBoundsOnClick: true, maxClusterRadius: 30, disableClusteringAtZoom: 12,
+        iconCreateFunction: function(cluster) {
+          const count = cluster.getChildCount();
+          const tier = getDftClusterTier(count);
+          return L.divIcon({ html: '<div style="width:' + tier.size + 'px;height:' + tier.size + 'px;line-height:' + (tier.size - 2) + 'px;background:' + tier.colour + ';">' + count + '</div>', className: "dft-cluster", iconSize: L.point(tier.size, tier.size) });
+        }
+      });
+
+      filtered.forEach(feature => {
+        const p = feature.properties || {};
+        const latlng = [feature.geometry.coordinates[1], feature.geometry.coordinates[0]];
+        const marker = L.circleMarker(latlng, { radius: 5, color: "#111", weight: 1.2, opacity: 1, fillColor: "#ffc107", fillOpacity: 0.9 });
+        marker.bindPopup(formatDftPopup(p));
+        dftRoadworksLayer.addLayer(marker);
+      });
+      map.addLayer(dftRoadworksLayer);
+    }
+
+    function rebuildAll() {
+      updateLegend();
+      rebuildLsoaLayer();
+      rebuildRouteLayer();
+      rebuildRouteLabels();
+      rebuildCycleSchemeLayer();
+      rebuildBusLaneLayer();
+      rebuild20mphLayer();
+      rebuildDftRoadworksLayer();
+    }
+
+    function searchRoute() {
+      const query = normaliseRoute(document.getElementById("searchBox").value);
+      searchedRoute = query || null;
+      if (!document.getElementById("showRoutes").checked) document.getElementById("showRoutes").checked = true;
+      rebuildRouteLayer();
+      rebuildRouteLabels();
+      if (!searchedRoute || !routeLayer) return;
+      let foundLayer = null;
+      routeLayer.eachLayer(layer => { const route = getFeatureRoute(layer.feature); if (route === searchedRoute) foundLayer = layer; });
+      if (foundLayer) {
+        try { map.fitBounds(foundLayer.getBounds().pad(0.35)); } catch (e) {}
+        foundLayer.openPopup();
+      }
+    }
+
+    function clearSearch() { searchedRoute = null; document.getElementById("searchBox").value = ""; rebuildRouteLayer(); rebuildRouteLabels(); }
+
+    async function loadJson(path) { const res = await fetch(path); if (!res.ok) throw new Error('Failed to load ' + path); return await res.json(); }
+    async function loadText(path) { const res = await fetch(path); if (!res.ok) throw new Error('Failed to load ' + path); return await res.text(); }
+
+    Promise.all([
+      loadJson("data/lsoa_boundaries_simplified.geojson"),
+      loadText("data/lsoa_route_change_lookup.csv"),
+      loadJson("data/bus_routes.geojson"),
+      loadJson("data/cycle_major_schemes.geojson"),
+      loadJson("data/bus_lanes.geojson"),
+      loadText("data/routes_year_summary.csv"),
+      loadJson("data/dft_roadworks_points.geojson"),
+      loadJson("20mph_osm_dated.geojson")
+    ]).then(results => {
+      clearStatus();
+      originalLsoaGeoJson = results[0];
+      buildLsoaLookup(csvToObjects(results[1]));
+      originalRoutesGeoJson = results[2];
+      originalCycleSchemesGeoJson = results[3];
+      originalBusLanesGeoJson = results[4];
+      buildRouteTimeseries(csvToObjects(results[5]));
+      detectedRouteField = detectRouteField(originalRoutesGeoJson);
+      originalDftRoadworksGeoJson = results[6];
+      original20mphGeoJson = results[7];
+      populateYearDropdowns();
+      rebuildAll();
+      try { const bounds = L.geoJSON(originalLsoaGeoJson).getBounds(); if (bounds.isValid()) map.fitBounds(bounds.pad(0.02)); } catch (e) {}
+      setStatus('Loaded ' + (originalLsoaGeoJson.features ? originalLsoaGeoJson.features.length : 0) + ' LSOAs.');
+      setStatus('Loaded ' + lsoaLookup.size + ' LSOA lookup rows grouped by area.');
+      setStatus('Loaded ' + routeTimeseries.size + ' route/year rows.');
+      setStatus('Loaded ' + (originalDftRoadworksGeoJson.features ? originalDftRoadworksGeoJson.features.length : 0) + ' Street Manager point features.');
+      setStatus('Loaded ' + (original20mphGeoJson.features ? original20mphGeoJson.features.length : 0) + ' dated 20mph road features.');
+      setStatus('Available years: ' + availableYears.join(", "));
+      setStatus('Default map metric: percentage change.');
+    }).catch(err => {
+      console.error(err);
+      clearStatus();
+      setStatus("Failed to load one or more data files.");
+    });
+
+    document.getElementById("fromYear").addEventListener("change", function() { ensureValidYearRange(); rebuildAll(); });
+    document.getElementById("toYear").addEventListener("change", function() { ensureValidYearRange(); rebuildAll(); });
+    document.getElementById("metricMode").addEventListener("change", rebuildAll);
+    document.getElementById("showRoutes").addEventListener("change", function() { rebuildRouteLayer(); rebuildRouteLabels(); });
+    document.getElementById("showCycleSchemes").addEventListener("change", rebuildCycleSchemeLayer);
+    document.getElementById("showBusLanes").addEventListener("change", rebuildBusLaneLayer);
+    document.getElementById("show20mph").addEventListener("change", function() { updateLegend(); rebuild20mphLayer(); });
+    document.getElementById("showDftRoadworks").addEventListener("change", function() { updateLegend(); rebuildDftRoadworksLayer(); });
+    document.getElementById("showRouteLabels").addEventListener("change", rebuildRouteLabels);
+    document.getElementById("searchBtn").addEventListener("click", searchRoute);
+    document.getElementById("clearBtn").addEventListener("click", clearSearch);
+    document.getElementById("searchBox").addEventListener("keydown", function(e) { if (e.key === "Enter") searchRoute(); });
+  </script>
+</body>
+</html>

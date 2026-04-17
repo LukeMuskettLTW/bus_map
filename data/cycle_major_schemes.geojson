@@ -1751,7 +1751,7 @@
         "length_km": 19.397,
         "historical_label": "C1",
         "current_label": "C1",
-        "label_note": "Embankment / central east-west cycle route"
+        "label_note": "Cycleway 1"
       },
       "geometry": {
         "type": "MultiLineString",

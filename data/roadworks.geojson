@@ -1,0 +1,1721 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.139329,
+          51.529382
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.140359,
+          51.529397
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.138708,
+          51.529373
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.139218,
+          51.52938
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.139706,
+          51.529387
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.140749,
+          51.529403
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.140458,
+          51.529398
+        ]
+      },
+      "properties": {
+        "street": "VARNDELL STREET (NW1 )",
+        "location": "[A400] HAMPSTEAD ROAD (NW1 ) (Camden)",
+        "category": "Works",
+        "subcategory": "Network Rail works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "[A400] Hampstead Road (Both directions) at the junction of Robert Street - Various restrictions in place, including temporary signals, for HS2 works. Additionally, Varndell Street is closed in both directions.",
+        "start": "2022-08-11T07:00:00",
+        "end": "2027-07-31T22:59:00",
+        "duration_days": 1815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.21097,
+          51.592896
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.208463,
+          51.593249
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.208515,
+          51.593243
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212337,
+          51.592736
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213077,
+          51.592515
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.210077,
+          51.593049
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.193838,
+          51.595061
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212066,
+          51.592698
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212333,
+          51.592655
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212485,
+          51.592517
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.210078,
+          51.592913
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.187846,
+          51.593763
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.188177,
+          51.593836
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.199762,
+          51.595029
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.182467,
+          51.592495
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.184413,
+          51.593016
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.208471,
+          51.593129
+        ]
+      },
+      "properties": {
+        "street": "[A12] EASTERN AVENUE EAST (RM1 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.215428,
+          51.591215
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.215736,
+          51.591061
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213226,
+          51.59262
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213523,
+          51.592396
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.214871,
+          51.591554
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.219852,
+          51.589054
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.22036,
+          51.588807
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213147,
+          51.59379
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213165,
+          51.593619
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213165,
+          51.593592
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212982,
+          51.594432
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213123,
+          51.593286
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213111,
+          51.593233
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212949,
+          51.594536
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213111,
+          51.593233
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213165,
+          51.593592
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213023,
+          51.594306
+        ]
+      },
+      "properties": {
+        "street": "STRAIGHT ROAD (RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.209984,
+          51.591027
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.210084,
+          51.591094
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212274,
+          51.592336
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.210422,
+          51.591319
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.211007,
+          51.591682
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.212154,
+          51.592253
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.210234,
+          51.591193
+        ]
+      },
+      "properties": {
+        "street": "[A118] MAIN ROAD (RM2 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.219395,
+          51.594473
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.21695,
+          51.593782
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2231,
+          51.595576
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213668,
+          51.59285
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.215599,
+          51.593366
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.216672,
+          51.593706
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.223848,
+          51.595789
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.224244,
+          51.595905
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.215319,
+          51.59328
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.219277,
+          51.594437
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.219635,
+          51.594549
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.221394,
+          51.595094
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.221593,
+          51.595148
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.214202,
+          51.592975
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.216326,
+          51.593597
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.231967,
+          51.598218
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213382,
+          51.59286
+        ]
+      },
+      "properties": {
+        "street": "[A12] COLCHESTER ROAD (RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.214939,
+          51.591329
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.217359,
+          51.590114
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.219169,
+          51.589243
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.223992,
+          51.586904
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.223598,
+          51.587102
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213368,
+          51.592276
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.219776,
+          51.588962
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.218053,
+          51.589776
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.222327,
+          51.587731
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.223154,
+          51.587323
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.21668,
+          51.590436
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.215681,
+          51.590941
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.223767,
+          51.587017
+        ]
+      },
+      "properties": {
+        "street": "[A127] SOUTHEND ARTERIAL ROAD (RM11 ,RM2 ,RM3 )",
+        "location": "[A12] EASTERN AVENUE EAST (RM2 ,RM3 ) (Havering)",
+        "category": "Works",
+        "subcategory": "TfL works",
+        "severity": "Moderate",
+        "closure": "Closed",
+        "comments": "Gallows Corner Flyover Refurbishment - [A12] Eastern Avenue East (All directions) at the junction of [A12] Colchester Road - Various restrictions, to facilitate the refurbishment of Gallows Corner Flyover. Full closure of the Flyover and the roundabout including all approaches in place.\r\nBetween 10-13 April, Gallows Corner roundabout will be closed to all vehicles, to facilitate reconstructing and resurfacing. From 24 April 22:00 to 26 April 05:00, A12 Colchester Road will be closed between Bryant Avenue & Gallows Corner to resurface the carriageway.",
+        "start": "2025-03-15T21:00:00",
+        "end": "2026-04-30T22:59:00",
+        "duration_days": 411
+      }
+    }
+  ]
+}
